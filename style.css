@@ -84,9 +84,10 @@ body{
      width: 100%;       
     justify-content: space-between;     
 }
-/* hero image resume image */
+/* hero image,resume image,certificate-logo  container*/
 .resume-image,
-.hero-image{
+.hero-image,
+.certificate-logo-container{
     max-width: 100%;
     height: auto;
     margin: 5px auto;
@@ -199,7 +200,61 @@ width: 50px;
     margin: 0rem;
 }
 
+/* Certificate section */
 
+.certification-container{
+
+}
+.certification-sub-container{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.certification-list{
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 1.25rem;
+    border: 2px solid #444;
+    border-radius: 0.375rem;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+    min-height: 100px;
+    /* padding: 1rem; */
+}
+
+.certification-list:hover{
+    transform: translateY(-10px);
+}
+
+.certificate-logo-container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 3rem;
+    background-color: #444;
+    border-radius: 10px;
+    /* margin-left: 0.5rem; */
+}
+
+.certification-description{
+    margin-right: auto;
+}
+
+
+.certificate-name{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    font-weight: 400;
+    color: rgb(247, 239, 239);
+}
+
+.cedrtificate-org-name{
+    
+}
 
 /* container */
 .container{
@@ -231,6 +286,12 @@ width: 50px;
     .about-right{
         width: 60%;
     }
+    .certification-sub-container{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
     
 }
 @media (min-width:1200px){
