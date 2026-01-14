@@ -365,7 +365,7 @@ progress::-webkit-progress-value{
 /* project */
 
 .projects-container{
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .project-container{
@@ -417,8 +417,81 @@ progress::-webkit-progress-value{
 }
 /* Contact  */
 
+.contact-container{
+    min-height: 100vh;
+    margin-top: 3rem;
+}
 
+.contact-info-container{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
 
+}
+
+.contact-info-container a,p{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 1rem;
+}
+
+.input-field{
+    background-color: transparent;
+    border: 2px solid #666;
+    border-radius: 3px;
+    width: 90%;
+    padding: 8px;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.input-field:focus{
+    outline: none;
+}
+
+.contact-button{
+    border: 1px solid #3b8df6;
+    background-color: transparent;
+    padding:0.5rem 1rem;
+    border-radius: 10px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.contact-button:hover{
+    cursor: pointer;
+    background-color: #3b8df6;
+}
+/* Footer */
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-top: 2px solid #444;
+}
+
+.footer-link{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 1rem;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.footer-link:hover{
+    color: #3b8df6;
+}
 
 
 /* container */
@@ -463,6 +536,16 @@ progress::-webkit-progress-value{
     grid-template-columns: repeat(3,minmax(0,1fr));
     gap: 2rem;
     /* margin-top: 3rem; */
+
+}
+
+.contact-info-container{
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
 
 }
     
